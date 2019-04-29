@@ -13,7 +13,7 @@ class ProductList extends React.Component {
     const { params } = this.props;
     const top = params && params.top ? params.top : 1;
 
-    const uri = `https://jssbootcamp910/sitecore/api/ssc/aggregate/content/Items('%7BDD2003EF-DD83-5EF5-9C38-475F401E7E5A%7D')/Children?$top=${top}&sc_apikey={B933AC04-CF02-4507-909A-2B6E202D8510}`;
+    const uri = `http://sc910.sc/sitecore/api/ssc/aggregate/content/Items('%7BB0C31187-CA0F-594D-97AF-0873B4323266%7D')/Children?sc_apikey=%7BF331343E-A6B0-4CCC-A0FD-85C7D244B751%7D&$top=${top}`;
 
     fetch(uri)
       .then(response => {
